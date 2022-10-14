@@ -35,6 +35,6 @@ public class Home extends HttpServlet{
         Product product = new Product(name, quantity, price);
         productList.add(product);
         req.setAttribute("productList", productList);
-        req.getRequestDispatcher("webapp/Product.jsp").forward(req, resp);
+        req.getRequestDispatcher("webapp/Home.jsp").forward(req, resp);
     }
 }
